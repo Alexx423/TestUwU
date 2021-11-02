@@ -335,16 +335,6 @@ check_os_comp() {
     ;;
   esac
 
-  # exit if not supported
-  if [ "$SUPPORTED" == true ]; then
-    echo "* $OS $OS_VER is supported."
-  else
-    echo "* $OS $OS_VER is not supported"
-    print_error "Unsupported OS"
-    exit 1
-  fi
-}
-
 ##### Main installation functions #####
 
 # Install composer
